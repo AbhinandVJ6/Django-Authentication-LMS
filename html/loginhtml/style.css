@@ -1,0 +1,44 @@
+section.signin {
+    text-align: center;
+    margin: 3vw;
+}
+img.lock {
+    width: 70px;
+}
+p.hd {
+    font-size: 1.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    border: 0;
+    margin: 0;
+    margin-bottom: 0.9vw;
+    color: rgb(61, 61, 61);
+    margin-bottom: 2vw;
+}
+.hd span {
+    font-size: 1.1vw;
+}
+input[type="text"] {
+
+    width: 24vw;
+    height: 2.8vw;
+    border-radius: 4px;
+    border: 1px solid rgb(212, 211, 211);
+    margin: 0.8vw;
+    padding-left: 1vw;
+}
+button.signin {
+    width: 25.2vw;
+    background-color: #1876d1;
+    color: #f3eded;
+    border: none;
+    height: 2.4vw;
+    border-radius: 4px;
+    font-size: 0.8vw;
+}
+.copyright a{
+    color: #828486;
+}
+.copyright {
+    color: #828486;
+}
