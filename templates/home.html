@@ -6,24 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <title>Home</title>
+    <link rel="shortcut icon" href="{% static '/img/techis-logo.png' %}" type="image/x-icon">
+    <title>TECH IS Leave-Management</title>
 </head>
 <body>
-    
-
-
-
     {% csrf_token %}
     {% if user.is_authenticated %}
-    <div class="nav1">
+
+    <section class="Main_content">
+
+        <!-- head -->
+        <!--  -->
+        <div class="icon_arrow"> < </div>
+            <div class="header">
+                <p class="head">Leave-Management</p>
+                <div class="right">
+                    <p class="user">{{ user.username }}</p>
+                    <p class="user"><a href="{% url 'logout' %}"> Log out </a></p>
+                </div>
+            </div>
+        </section>
         
-        <div class="right1">
-        <p class="name1"> {{ user.username }} &nbsp; &nbsp;</p>
-        <p><a href="{% url 'login' %}"> Log out </a></p>
-        </div>
-
-
-    </div>
+            <!-- left menu -->
+                <!--  -->
+            <section class="leftmenu">
+                <div class="menu">
+                    <img src="/lefticn.svg" alt="" id="menu_icon">
+                    <p id="menu_detail">Report</p>
+                </div>
+                <div class="menu">
+                    <img src="/lefticn.svg" alt="" id="menu_icon">
+                    <p id="menu_detail">Target</p>
+                </div>
+                <div class="menu">
+                    <img src="/lefticn.svg" alt="" id="menu_icon">
+                    <p id="menu_detail">Task</p>
+                </div>
+                <div class="menu">
+                    <img src="/lefticn.svg" alt="" id="menu_icon">
+                    <p id="menu_detail">Admin</p>
+                </div>
+                <div class="menul">
+                    <img src="/lefticn.svg" alt="" id="menu_icon">
+                    <p id="menu_detail">Leave-Management</p>
+                </div>
+            </section>
+        
     
   
 
@@ -34,8 +62,27 @@
 
 
     {% else %}
-    <p> log In </p>
-    <a href="{% url 'login' %}"> Log In </a>
+    <!-- <p> log In </p>
+    <a href="{% url 'login' %}"> Log In </a> -->
+    <section class="signin">
+        <img class="lock" src="{% static 'img/lock.png'%}" alt="">
+        <p class="hd">TECH IS Leave Management <br> <span> Sign In </span></p>
+        <div class="input">
+            <form method="post"> {% csrf_token %}
+                <p class="inp">  {{ form.as_p }} </p>
+           
+            
+    
+        </div>
+        <br>
+        <div class="btn"><a href="http://127.0.0.1:8000/login/"><Button class="signin"> <a href="http://127.0.0.1:8000/login/"> Sign In </a></Button></a></div>
+        </form>
+
+        <div class="copyright"> <br> <br>
+            <p>Copyright © <a href="https://techis.io/">Tech I.S. </a> 2023</p>
+        </div>
+    </section>
+    
     {% endif %}
 </body>
 </html>

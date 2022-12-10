@@ -96,3 +96,79 @@ p .hd1 {
 .right1 span {
     justify-content: center;
 }
+button.signin:hover{
+    background-color: #0e5fb1;
+    transition: 0.6s;
+}
+
+/* //// */
+/* 2ndadded */
+
+
+
+body{
+    margin: 0;
+}
+.header {
+    display: flex;
+    width: 100%;
+    background-color: rgb(11, 111, 211);
+    color: rgb(253, 248, 248);
+    justify-content: space-between;
+    margin-left: 13vw;
+    height: 1.5vw;
+    margin-top: 0;
+    
+    padding: 0.5vw 1vw 2.4vw 2vw;
+}
+p.head  , p.user {
+    font-size: 1.1vw;
+
+}
+.icon_arrow {
+    position: absolute;
+    top: 1.3vw;
+    left: 10.7vw;
+    font-size: 1.5vw;
+}
+.menu {
+    display: flex;
+    gap: 1.2vw;
+    padding: 4px;
+}
+.menul {
+    display: flex;
+    gap: 1.2vw;
+    background-color:rgb(188, 185, 185);
+    padding: 4px;
+}
+img#menu_icon {
+    width: 27px;
+    opacity: 0.7;
+}
+section.leftmenu {
+    width: 13vw;
+    height: 100vw;
+    border-right: 1px solid rgb(112, 111, 111);
+    border-top: 1px solid rgb(112, 111, 111);
+}
+section.Main_content {
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.right {
+    display: flex;
+    margin-left: 50vw;
+    padding-right: 3vw;
+    gap: 2vw;
+}
+
+.user a{
+    text-decoration: none ;
+    color: white;
+}
+.signin a{
+    text-decoration: none ;
+    color: white;
+}
